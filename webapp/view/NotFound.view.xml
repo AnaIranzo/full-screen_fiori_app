@@ -1,0 +1,12 @@
+<mvc:View controllerName="student6820.com.sap.training.ux402.fullscreen.ux402fullscreen.controller.NotFound"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+            <MessagePage id="messagePage1" 
+    title="{i18n>notFoundMessageTitle}"
+    text="{i18n>notFoundMessageText}"
+    description="{i18n>notFoundMessageDescription}"
+    showNavButton="true"
+    navButtonPress="onNavBack"/>
+        </Page>
+</mvc:View>
