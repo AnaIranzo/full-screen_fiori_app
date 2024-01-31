@@ -1,13 +1,12 @@
 
+
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "student6820/com/sap/training/ux402/fullscreen/ux402fullscreen/control/HoverButton",
+    "student6820/com/sap/training/ux402/controls/HoverButton",
     "sap/m/MessageToast",
-    "student6820/com/sap/training/ux402/fullscreen/ux402fullscreen/control/PlaneInfo" 
+    "student6820/com/sap/training/ux402/controls/PlaneInfo" 
    ],
-    /**
-    * @param {typeof sap.ui.core.mvc.Controller} Controller
-    */
+    
     function (Controller, HoverButton, MessageToast, PlaneInfo) {
     "use strict";
 
@@ -16,6 +15,7 @@ sap.ui.define([
             onInit: function () {
                 var oRouter = this.getRouter();
                 oRouter.getRoute("flights").attachMatched(this._onObjectMatched, this);
+                
             },
             
             getRouter: function () {
@@ -69,6 +69,8 @@ sap.ui.define([
                     
                 var sText = this.getOwnerComponent().getModel("i18n").getProperty("msgSeatsAv");
                 MessageToast.show(evt.getSource().getHoverText() + " " + sText, {duration: 1000});
+
+                
             }
    
    

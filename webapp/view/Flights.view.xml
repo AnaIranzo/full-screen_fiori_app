@@ -1,8 +1,9 @@
-<mvc:View controllerName="student6820.com.sap.training.ux402.fullscreen.ux402fullscreen.controller.Flights"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m"
-    xmlns:l="sap.ui.layout"
-    xmlns:cust="student6820.com.sap.training.ux402.fullscreen.ux402fullscreen.control">
+
+<mvc:View controllerName="student6820.com.sap.training.ux402.fullscreen.ux402fullscreen.controller.Flights" 
+ xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+ xmlns:cust="student6820.com.sap.training.ux402.controls">
+
+
     <Page id="flightsPage" navButtonPress="onNavBack" showNavButton="true" title="{Carrname}" >
         
         <content>
